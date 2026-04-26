@@ -24,5 +24,5 @@ ys = np.array([-3.0, -1.0, 1.0, 3.0, 5.0, 7.0], dtype=float)
 
 model.fit(xs, ys, epochs=500)
 
-print(model.predict([10.0]))
+print(model.predict(np.array([[10.0]])))
 print("Here is what I learned: {}".format(l0.get_weights()))
